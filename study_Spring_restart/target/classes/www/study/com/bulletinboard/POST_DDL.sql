@@ -14,8 +14,8 @@ create table t_post (
 	hierarchy_id	varchar(2000),
 	writer_id		varchar(50),
 	content			varchar(2000),
-	reg_date		datetime,			--년월일시분초
-	
+	reg_date		datetime,			--등록일 년월일시분초
+	update_date		datetime,			--수정일 년월일시분초
 	post_type		varchar(50),		--POST, Reply
 	bb_id			bigint,
 	title			varchar(500),
