@@ -29,4 +29,11 @@ public abstract class PartyVO {
 				+ ", joinDate=" + joinDate + ", listContactPoint=" + listContactPoint + "]";
 	}
 	
+	protected String toStringPropOnly() {
+		return "loginId=" + loginId + ", pwd=" + pwd + ", name=" + name + ", listContactPoint=" + listContactPoint;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 }

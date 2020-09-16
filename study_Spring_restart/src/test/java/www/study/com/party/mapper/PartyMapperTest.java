@@ -14,14 +14,29 @@ import www.study.com.party.model.PartyVO;
 @ContextConfiguration({"file:src/main/webapp/WEB-INF/spring/root-context.xml"})
 //테스트 순서는 이름 오름차순으로 하겠다.
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class MapperTest {
+public class PartyMapperTest {
 	@Autowired
 	private PartyMapper partymapper;
 	
-	@Test
+	//@Test
 	public void test_aa_사용자아이디바탕으로찾기() {
 		try {
 			PartyVO party = partymapper.findPartyByLoginID("a");
+			System.out.println(party);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	/*
+	 * 
+	 */
+	@Test
+	public void test_ab_사용자를연락처까지함께아이디바탕으로찾기() {
+		try {
+			//Method Signiture
+			PartyVO party = partymapper.findPartyWithContactPointByLoginID("a");
 			System.out.println(party);
 		} catch (Exception e) {
 			e.printStackTrace();

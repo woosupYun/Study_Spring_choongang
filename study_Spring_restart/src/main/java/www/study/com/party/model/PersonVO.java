@@ -7,4 +7,10 @@ public class PersonVO extends PartyVO {
 	public PersonVO(String loginId, String pwd) {
 		super(loginId, pwd);
 	}
+
+	@Override
+	public String toString() {
+		return "PersonVO [" + toStringPropOnly() + "gender=" + gender + "]";
+	}
+	
 }
