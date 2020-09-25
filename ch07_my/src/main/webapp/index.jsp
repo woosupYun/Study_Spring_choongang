@@ -9,7 +9,8 @@
 </head>
 <body>
 <script type="text/javascript">
-	location.href="uploadForm";
+	//location.href="uploadForm";
+	location.href="aa.do";
 </script>
 
 </body>

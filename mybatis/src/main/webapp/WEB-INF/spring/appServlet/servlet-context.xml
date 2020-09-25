@@ -21,17 +21,8 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.ch.ch07" />
-	<beans:bean id="si" class="com.ch.ch07.SampleInter"></beans:bean>
-	<beans:bean id="lc" class="com.ch.ch07.LoginChk"></beans:bean>
-	<interceptors>
-		<interceptor>
-			<!-- <mapping path="/aa.do"/> -->
-			<mapping path="/uploadForm.do"/>
-			<beans:ref bean="lc"/>
-			<!-- <beans:ref bean="si"/> -->
-		</interceptor>
-	</interceptors>
+	<context:component-scan base-package="com.ch.mybatis" />
+	
 	
 	
 </beans:beans>
